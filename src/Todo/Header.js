@@ -15,7 +15,7 @@ function Header() {
                  <NavLink to='/dashboard' className='nav-link' activeClassName='btn btn-success'>Dashboard</NavLink>
              </li>
              <li className='nav-link'>
-                 <NavLink to='/project' className='nav-link' activeClassName='btn btn-success'>Project</NavLink>
+                 <NavLink to='/projects' className='nav-link' activeClassName='btn btn-success'>Projects</NavLink>
              </li>
              <li className='nav-link'>
                  <NavLink to='/topics' className='nav-link' activeClassName='btn btn-success'>Topics</NavLink>

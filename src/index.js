@@ -2,14 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
 
 ReactDOM.render(
   <>
-    <BrowserRouter>
+  <React.StrictMode>
+    <Router forceRefresh={false} basename='/todoapp' getUserConfirmation={(message, callback) =>{
+      let allow = window.confirm(message);
+      callback(allow)
+    }}>
       <App />
-    </BrowserRouter>
+    </Router>
+  </React.StrictMode>
   </>,
   document.getElementById('root')
 );
