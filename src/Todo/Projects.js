@@ -14,7 +14,7 @@ export default function Projects() {
     };
     return (
         <div>
-            <h2>My projects</h2>
+            <h2>My projects :ant:</h2>
             <nav className='navbar navbar-expand-lg'>
                 <Prompt 
                 when={projectId.length>0}
