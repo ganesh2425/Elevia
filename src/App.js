@@ -1,18 +1,28 @@
 import React from 'react';
-import Login from "./components/Login";
-import {Route, Switch} from "react-router-dom";
-import Dashboard from "./components/Dashboard";
-import Greet from "./components/Greet";
+import Header from "./NewProject/components/Header";
+import AddContact from "./NewProject/components/AddContact";
+import ContactList from "./NewProject/components/ContactList";
 
 export default function App() {
+    const contacts = [
+        {
+            id: '1',
+            name: 'Ganesh',
+            email: 'ganesh023@gmail.com'
+        },
+        {
+            id: '2',
+            name: 'Ram',
+            email: 'ram@gmail.com'
+        }
+    ]
     return (
         <>
-        <Switch>
-            <Route exact path="/" component={Login}/>
-            <Route exact path="/dashboard" component={Dashboard}/>
-            <Route exact path="/Greet" component={Greet}/>
-        </Switch>
-        
+        <div className='ui container'>
+         <Header />
+         <AddContact />
+         <ContactList contacts={contacts}/>
+         </div>  
         </>
     )
 }
