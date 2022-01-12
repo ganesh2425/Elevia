@@ -1,5 +1,5 @@
 import React from 'react';
-import eleviaLogo from "../Assets/eleviaLogo.png";
+import eleviaLogo from "./Assets/eleviaLogo.png";
 import { useHistory } from 'react-router-dom';
 
 
