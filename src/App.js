@@ -1,10 +1,10 @@
-import React from 'react';
-import Post from "./TablePagination/Post";
+import React from 'react'
+import SortTable from './SortTable'
 
 export default function App() {
     return (
         <>
-        <Post />   
+        <SortTable/>    
         </>
     )
 }
