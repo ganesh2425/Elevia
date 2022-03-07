@@ -1,0 +1,12 @@
+.deactive {
+    background-color: #f38672;
+    width: fit-content;
+    padding: 0.5px;
+    border-radius: 3px;
+}
+.active {
+    background-color: #94e93f;
+    width: fit-content;
+    padding: 0.5px;
+    border-radius: 3px;
+}

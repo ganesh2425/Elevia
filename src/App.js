@@ -1,10 +1,16 @@
-import React from 'react'
-import SortTable from './SortTable'
+import React from 'react';
+import CrudTable from './MaterialUI/CrudTable';
+// import DyneTable from './MaterialUI/DyneTable';
+// import Table from './MaterialUI/Table';
 
-export default function App() {
-    return (
-        <>
-        <SortTable/>    
-        </>
-    )
+function App() {
+  return (
+    <>
+    {/* <Table/>
+    <DyneTable/> */}
+    <CrudTable/>
+    </>
+  )
 }
+
+export default App
